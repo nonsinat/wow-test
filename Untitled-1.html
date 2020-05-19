@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{
+
+color:violet;
+background-color: white;
+border-radius: 5px;
+border: 1px solid ;
+font-size: large;
+vertical-align: center;
+padding: 10px;
+padding-right: 20px;
+}
+.btn{
+    
+    color: turquoise;
+}
+.btn:hover{
+    background-color: turquoise;
+    color:white;
+}
+button:hover{
+    background-color:violet;
+    color:white;
+}
+.third{
+    font-size: medium;
+    color: white;
+    border-color: white;
+    padding-right: 40px;
+    padding: 10px;
+}
+.third:hover{
+  background-color:thistle;
+    color:lightslategray;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.desc{
+    padding:1px;
+    text-align: center;
+}
+a{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #f9f9f9;
+    color:black;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+   <button type="button">primary</button>
+   <button type="button" class="btn">Second</button>
+   <button type="button" class="third">Light</button>
+    <h2>Dropdown Image</h2>
+    <p>move the mouse over the image below to open the dropdown content.</p>
+    <div class="dropdown">
+        <button class="h" type="button">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <div class="desc">Beautiful Cinque Terre</div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
